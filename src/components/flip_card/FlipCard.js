@@ -34,10 +34,10 @@ class FlipCard extends Component {
       <div className="flipCard">
           <div className={`flipCard_front ${this.state.frontClass}`}>
             <h1>front</h1>
-            <button onClick={this.onClick}>Flip Card!!!</button>
+            <button className="overlay-btn" onClick={this.onClick}>Flip Card!!!</button>
           </div>
           <div className={`flipCard_back ${this.state.backClass}`}>
-            <button onClick={this.onClick}>Flip Card</button>
+            <button className="overlay-btn" onClick={this.onClick}>Flip Card</button>
           </div>
       </div>
     )

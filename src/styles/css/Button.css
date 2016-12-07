@@ -1,0 +1,9 @@
+.cf-btn {
+  display: inline-block;
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 3px; }
+
+.cf-btn-primary {
+  color: white;
+  background: deepskyblue; }
