@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { searchMediaAction } from '../action/mediaAction';
+import { searchMediaAction } from 'action/mediaAction';
 
 class MediaGalleryPage extends Component {
   componentDidMount () {

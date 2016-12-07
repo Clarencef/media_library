@@ -1,6 +1,6 @@
 import { put, call } from 'redux-saga/effects';
-import { flickrImages, shutterStockVideos } from '../api/api';
-import * as types from '../const/actionTypes';
+import { flickrImages, shutterStockVideos } from 'api/api';
+import * as types from 'const/actionTypes';
 
 export function* searchMediaSaga({ payload }) {
   try {

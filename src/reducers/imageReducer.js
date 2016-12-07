@@ -1,5 +1,5 @@
 import initialState from './initialState';
-import * as types from '../const/actionTypes';
+import * as types from 'const/actionTypes';
 
 export default function (state = initialState.images, action) {
   switch (action.type) {
