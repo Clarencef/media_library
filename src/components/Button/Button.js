@@ -14,11 +14,11 @@ class Button extends Component {
   static propTypes = {
     type: PropTypes.string,
     htmlType: PropTypes.oneOf(['submit','button','reset']),
-    disabled: PropTypes.bool,
+    disabled: PropTypes.boolean,
     shape: PropTypes.oneOf(['circle', 'circle-outline']),
-    size: PropTypes.oneOf(['large', 'default', 'small']),
-    onClick: PropTypes.func,
-    className: PropTypes.string
+    size: PropsTypes.oneOf(['large', 'default', 'small']),
+    onClick: PropsTypes.func,
+    className: PropsTypes.string
   };
 
   handleClick = (e) => {
@@ -28,6 +28,7 @@ class Button extends Component {
       onClick(e);
     }
   };
+
 
   render () {
     const {
@@ -61,3 +62,4 @@ class Button extends Component {
 }
 
 export default Button;
+
