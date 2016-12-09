@@ -1,10 +1,15 @@
 @import './FlipCard.scss';
 @import './Button.scss';
+@import './javascript30.scss';
 body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, Sans-Serif, sans-serif;
   background: white;
+}
+
+.demo_block {
+  margin-top: 30px;
 }
 
 .title {
@@ -35,4 +40,8 @@ body {
   height: 70px;
   padding: 1px;
   border: 1px solid grey;
+}
+
+.navbar {
+  margin-bottom: 0;
 }

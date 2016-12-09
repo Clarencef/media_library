@@ -12,13 +12,13 @@ class Button extends Component {
   };
 
   static propTypes = {
-    type: PropTypes.string,
-    htmlType: PropTypes.oneOf(['submit','button','reset']),
-    disabled: PropTypes.boolean,
-    shape: PropTypes.oneOf(['circle', 'circle-outline']),
-    size: PropsTypes.oneOf(['large', 'default', 'small']),
-    onClick: PropsTypes.func,
-    className: PropsTypes.string
+    type:      PropTypes.string,
+    htmlType:  PropTypes.oneOf(['submit','button','reset']),
+    disabled:  PropTypes.bool,
+    shape:     PropTypes.oneOf(['circle', 'circle-outline']),
+    size:      PropTypes.oneOf(['large', 'default', 'small']),
+    onClick:   PropTypes.func,
+    className: PropTypes.string
   };
 
   handleClick = (e) => {
@@ -51,9 +51,10 @@ class Button extends Component {
 
     return (
       <button 
-        type= {htmlType || 'button'}
+        type      = {htmlType || 'button'}
         className = {classes}
-        onClick = {this.handleClick}
+        onClick   = {this.handleClick}
+        disabled   = {disabled}
       >
         {children}
       </button>

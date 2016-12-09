@@ -1,5 +1,6 @@
 .flipCard {
   position: relative;
+  margin: 0 auto;
   height: 380px;
   width: 260px;
   perspective: 500px; }
@@ -64,19 +65,55 @@
 
 .cf-btn {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 4px 15px;
+  margin: 0 10px;
+  line-height: 1.5;
   border: 0;
   border-radius: 3px; }
+  .cf-btn[disabled] {
+    background: rgba(128, 128, 128, 0.4);
+    color: grey; }
 
 .cf-btn-primary {
   color: white;
   background: deepskyblue; }
+
+img {
+  height: 100vh;
+  width: 100vw; }
+
+.flex-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(../../images/day1.jpg);
+  background-size: cover;
+  justify-content: middle; }
+
+.musickey-container {
+  width: 100%; }
+
+.musickey {
+  display: inline-block;
+  margin-left: 20px;
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white; }
+  .musickey p {
+    margin-top: 20px; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, Arial, Sans-Serif, sans-serif;
   background: white; }
+
+.demo_block {
+  margin-top: 30px; }
 
 .title {
   padding: 2px;
@@ -102,3 +139,6 @@ body {
   height: 70px;
   padding: 1px;
   border: 1px solid grey; }
+
+.navbar {
+  margin-bottom: 0; }
